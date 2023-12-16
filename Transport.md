@@ -1,16 +1,31 @@
 
 ```
 |  8  |  16  |  24   |  32  |  40  |  48  |  56  |  64  |
-+--------------------+------+------+------+------+------+
-|    type    | flags |  RES |            size           |
-+--------------------+------+---------------------------+
++-----+------+-------+------+------+------+------+------+
+|   purpose  | flags |  RSV |            size           |
++------------+-------+------+---------------------------+
 |                           ...                         |
 |                          body                         |
 |                           ...                         |
 +                                                       +
 ```
 
-- Type: 3 byte, enum
-- RES: 1 byte, Reserved for future use
+- Purpose: 3 byte, enum, 4 bytes little endian with the last byte cut off)
 - Flags: 1 byte
-- Size: 4 bytes, unsigned integer
+- RSV: 1 byte, Reserved for future use
+- Size: 4 bytes, unsigned integer, little endian
+
+
+## Purpose
+
+The purpose specifies the purpose of the data, regardless of the way it's transmitted. For example, the purpose would specify "this is water", not which form it comes in (bottled, frozen, etc.) as that would be the job of the [flags](#flags).
+
+## Flags
+
+```
+|    7    |    6    |    5    |    4    |    3    |    2    |    1    |    0    |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|   RSV   |   RSV   |   RSV   |   RSV   |   RSV   |   RSV   |   RSV   |   comp  |
+```
+
+- Comp: Compressed (zstd)
