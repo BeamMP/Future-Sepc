@@ -5,9 +5,39 @@ The identification state's purpose is:
 - The client informing the server of program version, protocol version, game version, mod version and implementation (more info on this further down)
 - The server informing the client of program version, confirming/denying support for the protocol, game and mod versions, and informing of implementation
 
+### Purposes
+
+```
+ 1          Protocol version
+ 2          Protocol version ok
+ 3          Protocol version bad
+ 4          Client info
+ 5          Server info
+```
+
 ### Formats
 
-#### Versions
+#### Client/Server info format
+
+##### Client info
+
+```
+|      12       |      12       |      12       |      ...       |
++---------------+---------------+---------------+----------------+
+|  prog version |  game version |  mod version  | implementation |
++---------------+---------------+---------------+----------------+
+```
+
+##### Server info
+
+```
+|      12       |      ...       |
++---------------+----------------+
+|  prog version | implementation |
++---------------+----------------+
+```
+
+#### Versions format
 
 Each version is represented by 12 bytes, binary, unsigned, little endian, as follows:
 
@@ -18,7 +48,7 @@ Each version is represented by 12 bytes, binary, unsigned, little endian, as fol
 +-------------------+-------------------+-------------------+
 ```
 
-#### Implementation
+#### Implementation format
 
 An ASCII string of at most 255 characters, prefixed by the length in one byte, **not** null-terminated.
 
@@ -27,16 +57,6 @@ An ASCII string of at most 255 characters, prefixed by the length in one byte, *
 +---------+---------+
 |   size  |   ...   |
 +---------+---------+
-```
-
-### Purposes
-
-```
- 1          Protocol version
- 2          Protocol version ok
- 3          Protocol version bad
- 4          Client info
- 5          Server info
 ```
 
 ### Protocol
