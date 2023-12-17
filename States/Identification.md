@@ -3,7 +3,7 @@
 The identification state's purpose is:
 
 - The client informing the server of program version, protocol version, game version, mod version and implementation (more info on this further down)
-- The server informing the client of program version, confirming/denying support for the protocol, game and mod versions, and informing of implementation
+- The server informing the client of program version, confirming/denying support for the protocol version, and informing of implementation
 
 ### Purposes
 
