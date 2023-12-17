@@ -10,7 +10,7 @@
 +                                                       +
 ```
 
-- Purpose: 3 byte, enum, 4 bytes little endian with the last byte cut off)
+- Purpose: 2 byte enum, little endian
 - Flags: 1 byte
 - RSV: 1 byte, Reserved for future use
 - Size: 4 bytes, unsigned integer, little endian
