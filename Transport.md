@@ -15,6 +15,7 @@
 - RSV: 1 byte, Reserved for future use
 - Size: 4 bytes, unsigned integer, little endian
 
+Reserved (RSV) fields may be any value, and the value of these fields MUST be ignored.
 
 ## Purpose
 
