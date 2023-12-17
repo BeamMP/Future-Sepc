@@ -13,5 +13,4 @@ The authentication state's purpose is:
 
 ```
 C --------------------------------------- S
-
 ```
