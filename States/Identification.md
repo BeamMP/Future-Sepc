@@ -65,7 +65,7 @@ An ASCII string of at most 255 characters, prefixed by the length in one byte, *
 C --------------------------------------- S
 protocol version
 
-                    protocol version ok/bad    <- if bad, go to "leaving" state with reason kind "protocol version bad"
+                    protocol version ok/bad    <- if bad, connection close
 
 client info
 
