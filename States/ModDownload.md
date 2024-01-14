@@ -83,7 +83,7 @@ String (not null-terminated) detailing the reason for the failure.
 C --------------------------------------- S
                                   mods info
 mod request(s)
-...
+...                  mod request invalid (?)
 Mods sync done
 ```
 
