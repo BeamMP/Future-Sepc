@@ -22,7 +22,7 @@ The identification state's purpose is:
 ##### Client info
 
 ```
-|      12       |      12       |      12       |      ...       |
+|       6       |       6       |       6       |      ...       |
 +---------------+---------------+---------------+----------------+
 |  prog version |  game version |  mod version  | implementation |
 +---------------+---------------+---------------+----------------+
@@ -31,7 +31,7 @@ The identification state's purpose is:
 ##### Server info
 
 ```
-|      12       |      ...       |
+|       6       |      ...       |
 +---------------+----------------+
 |  prog version | implementation |
 +---------------+----------------+
@@ -39,10 +39,10 @@ The identification state's purpose is:
 
 #### Versions format
 
-Each version is represented by 12 bytes, binary, unsigned, little endian, as follows:
+Each version is represented by 6 bytes, binary, unsigned, little endian, as follows:
 
 ```
-|    2    |    4    |    6    |    8    |    10   |    12   |
+|    1    |    2    |    3    |    4    |    5    |    6    |
 +---------+---------+---------+---------+---------+---------+
 |      major        |       minor       |       patch       |
 +-------------------+-------------------+-------------------+
