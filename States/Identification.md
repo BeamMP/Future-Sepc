@@ -50,7 +50,7 @@ Each version is represented by 6 bytes, binary, unsigned, little endian, as foll
 
 #### Implementation format
 
-An ASCII string of at most 255 characters, prefixed by the length in one byte, **not** null-terminated.
+An ASCII string of at most 254 characters, prefixed by the length in one byte, **not** null-terminated.
 
 ```
 |    1    |  2...   |
