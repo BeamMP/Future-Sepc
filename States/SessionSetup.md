@@ -4,7 +4,7 @@
 
 ```
 15    Players and vehicles info
-17    Ready
+16    Ready
 ```
 
 The ready packet is sent by the launcher once all players and vehicles are processed (spawned, for example).
