@@ -56,3 +56,14 @@ json:
   "args": [ ... ]
 }
 ```
+
+#### Player joined
+
+json:
+```json5
+{
+  "name": string,
+  "role": string
+}
+```
+
