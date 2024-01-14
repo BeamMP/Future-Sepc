@@ -34,8 +34,8 @@
 +----------+-------+-------
 ```
 
-Invalid/null pid: 0xffffffff
-Invalid/null vid: 0xffff
+- Invalid/null pid: 0xffffffff
+- Invalid/null vid: 0xffff
 
 #### 0x0101-0x0601
 
