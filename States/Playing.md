@@ -36,3 +36,23 @@
 
 Invalid/null pid: 0xffffffff
 Invalid/null vid: 0xffff
+
+#### 0x0101-0x0601
+
+Json body
+
+#### Chat message
+
+Not-null-terminated message string
+
+#### Event
+
+json:
+```json5
+{
+  // event name
+  "name": string,
+  // arbitrary event arguments
+  "args": [ ... ]
+}
+```
