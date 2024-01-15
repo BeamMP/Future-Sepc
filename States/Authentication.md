@@ -62,4 +62,5 @@ Only one of 7, 8, or 9 are valid responses to the public key. If it's not 7 (aut
 C ----------------------------------------------------------- S
 Player public key
                         Auth ok | Auth failed | Player rejected
+                                                      Start UDP
 ```
