@@ -17,6 +17,15 @@ The identification state's purpose is:
 
 ### Formats
 
+#### Protocol version
+
+```
+|       6       |
++---------------+
+|    version    |
++---------------+
+```
+
 #### Client/Server info format
 
 ##### Client info
