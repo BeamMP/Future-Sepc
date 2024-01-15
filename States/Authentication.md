@@ -52,6 +52,8 @@ player_id: unsigned 4-byte little endian integer
 
 magic: 8-byte unsigned little endian integer. The value of `magic` shall be unique to the client, but not guessable.
 
+Causes the client to establish a UDP connection and send the same packet back, at which point the magic is invalidated.
+
 ### Protocol
 
 Only one of 7, 8, or 9 are valid responses to the public key. If it's not 7 (auth ok) the connection is terminated by the server.
