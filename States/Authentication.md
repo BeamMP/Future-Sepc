@@ -9,10 +9,11 @@ The authentication state's purpose is:
 ### Purposes
 
 ```
-6    Player public key
-7    Auth ok
-8    Auth failed
-9    Player rejected
+0x06     Player public key
+0x07     Auth ok
+0x08     Auth failed
+0x09     Player rejected
+0x12     Start UDP
 ```
 
 ### Formats
@@ -39,6 +40,17 @@ Non-null-terminated message detailing the reason for the rejection, if any.
 ```
 
 player_id: unsigned 4-byte little endian integer
+
+#### Start UDP
+
+```
+|       8       |
++---------------+
+|     magic     |
++---------------+
+```
+
+magic: 8-byte unsigned little endian integer. The value of `magic` shall be unique to the client, but not guessable.
 
 ### Protocol
 
