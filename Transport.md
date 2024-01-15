@@ -30,3 +30,7 @@ The purpose specifies the purpose of the data, regardless of the way it's transm
 ```
 
 - Comp: Compressed (zstd)
+
+## Transport layer
+
+TCP and UDP may be used interchangably in this protocol. UDP may only be used for messages which are not reliable and which may be dismissed, such as position data.
