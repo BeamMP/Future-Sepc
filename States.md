@@ -20,7 +20,6 @@ The state change packet is sent by the server to indicate that the state has bee
 Purpose:
 
 ```
-0xaa01   State change to Identification
 0xaa02   State change to Authentication
 0xaa03   State change to ModDownload
 0xaa04   State change to SessionSetup
