@@ -15,3 +15,15 @@ The usual BeamMP join/play/leave loop has the following states:
 5. Playing
 6. Leaving
 
+The state change packet is sent by the server to indicate that the state has been changed:
+
+Purpose:
+
+```
+0xaa01   State change to Identification
+0xaa02   State change to Authentication
+0xaa03   State change to ModDownload
+0xaa04   State change to SessionSetup
+0xaa05   State change to Playing
+0xaa06   State change to Leaving
+```
