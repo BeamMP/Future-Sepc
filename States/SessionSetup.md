@@ -21,10 +21,14 @@ json:
     // player name
     "name": string,
     // server id
-    "id": string,
+    "id": number,
     "role": string,
     "vehicles": [
-      { ... }, // game-internal json for the vehicle
+      {
+        "id": number,
+        "data": { ... }, // game-internal json for the vehicle
+        "status": { "pos": ..., "vel": ..., ... }, // latest position, rotation, etc. data
+      },
       ...
     ]
   },
