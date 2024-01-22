@@ -46,6 +46,8 @@ Client to Server:
 +-------+-------
 ```
 
+- Invalid/null vid: 0xffff
+
 #### 0x0101-0x0601
 
 Json body
