@@ -12,6 +12,7 @@ The server can specify how the client must download the mods present.
 12   Mod response
 13   Mod request invalid
 14   Mods sync done
+0x11 Ping
 ```
 
 ### Format
