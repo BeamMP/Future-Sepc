@@ -14,6 +14,7 @@ The authentication state's purpose is:
 0x08     Auth failed
 0x09     Player rejected
 0x12     Start UDP
+0x11     Ping (The server may kill the connection if a Ping is received before the client is authenticated)
 ```
 
 ### Formats
