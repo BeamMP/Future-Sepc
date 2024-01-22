@@ -27,6 +27,7 @@
 
 ### Formats
 
+Server to Client:
 ```
 |     4    |   2   |  ...
 +----------+-------+-------
@@ -36,6 +37,14 @@
 
 - Invalid/null pid: 0xffffffff
 - Invalid/null vid: 0xffff
+
+Client to Server:
+```
+|   2   |  ...
++-------+-------
+|  vid  |  data
++-------+-------
+```
 
 #### 0x0101-0x0601
 
