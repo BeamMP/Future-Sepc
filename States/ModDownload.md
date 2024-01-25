@@ -91,6 +91,7 @@ C --------------------------------------- S
 mod request(s)
 ...                  mod request invalid (?)
 Mods sync done
+                                    Map info
 ```
 
 Transfer into next state: Session setup
