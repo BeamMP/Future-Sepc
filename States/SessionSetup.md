@@ -3,8 +3,8 @@
 ### Purposes
 
 ```
-15    Players and vehicles info
-16    Ready
+0x000f    Players and vehicles info
+0x0010    Ready
 ```
 
 The ready packet is sent by the launcher once all players and vehicles are processed (spawned, for example).
