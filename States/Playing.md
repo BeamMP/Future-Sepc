@@ -21,6 +21,7 @@
 0x0901    Player joined (J)
 0x0902    Player left
 0x0903    Player ping updated
+0x0904    Player downloading/connecting (maybe more states?)
 0x0a01    Notification (L)
 0x0b01    Kicked (K)
 ```
