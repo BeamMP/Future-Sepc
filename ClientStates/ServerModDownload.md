@@ -5,10 +5,16 @@
 ```
 0x0012  ModSyncStatus
 0x0013  MapInfo
+0x0014  Disconnect
+0xaa03  State change to Browsing
 0xaa07  State change to ServerSessionSetup
 ```
 
 ### Formats
+
+#### Disconnect
+
+Only sent by the game. Disconnects the launcher from the server, goes back to browsing.
 
 #### ModSyncStatus
 
