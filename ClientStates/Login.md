@@ -21,6 +21,7 @@ Empty body.
 {
   "username": string,
   "password": string,
+  "remember": true | false,
 }
 ```
 
