@@ -13,6 +13,8 @@ The identification state's purpose is:
  3          Protocol version bad
  4          Client info
  5          Server info
+???         Request Server details
+???         Server details
 ```
 
 ### Formats
