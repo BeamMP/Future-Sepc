@@ -1,3 +1,7 @@
+## ClientStates
+
+A ClientState represents the state in which both the launcher and game are, in relation to each other.
+
 1. `ClientIdentification = 0xC0`: Game connects to the launcher, sends mod version, game version. Launcher responds with implementation info.
 2. `Login = 0xC1`: Launcher tells game if already logged in, if not, game sends back login details. Repeat until logged in. Launcher sends successful login response back to the game.
 3. `QuickJoin = 0xC2`: Launcher tells the game whether there's already a server to connect to. If not, waits for the game to ask for something.
