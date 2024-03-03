@@ -40,8 +40,6 @@ If `remember` is `false`, the launcher must NOT store the new private key. If it
 }
 ```
 
-When the game receives `success: false`, it must immediately try again by asking the user for new details, and then sending another `Credentials` packet.
-
 TODO: Guests.
 
 ### Protocol
