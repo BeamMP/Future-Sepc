@@ -25,6 +25,8 @@ Empty body.
 }
 ```
 
+If `remember` is `false`, the launcher must NOT store the new private key. If it's `true`, the launcher must store the private key in the filesystem, and use the `/userlogin` endpoint with `{"pk": <key>}` to log in when re-started.
+
 #### LoginResult
 
 ```json5
@@ -38,13 +40,9 @@ Empty body.
 }
 ```
 
-#### Error
+When the game receives `success: false`, it must immediately try again by asking the user for new details, and then sending another `Credentials` packet.
 
-```json5
-{
-  "message": string,
-}
-```
+TODO: Guests.
 
 ### Protocol
 
