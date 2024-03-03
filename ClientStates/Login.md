@@ -69,10 +69,13 @@ L -------------------------------- G
 AskForCredentials
                          Credentials
 LoginResult { success: false }
+AskForCredentials
                          Credentials
 LoginResult { success: false }
+AskForCredentials
                          Credentials
 LoginResult { success: false }
+AskForCredentials
                          Credentials
 LoginResult { success: true }
 State change to QuickJoin
